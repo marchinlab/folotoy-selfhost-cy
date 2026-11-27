@@ -1,0 +1,34 @@
+# 运行时产物与敏感配置（绝不能提交）
+.env
+.env.*
+!.env.example
+!.env.free.example
+*.log
+*.lock
+*.pyc
+__pycache__/
+*.mp3
+*.wav
+*.srt
+
+# 设备与状态文件（含真实 SN / 内网信息）
+device_config_*.json
+.bridge_state.json
+.radio_bridge_state.json
+radio_state.json
+radio_cmd.json
+radio_station.json
+.radio_watchdog_lastheal
+
+# 备份与临时文件
+*.bak*
+_*.tmp
+_probe_*
+_verify_*.py
+_unit_*.py
+_test_*.py
+_hotrestart_*.py
+
+# 系统
+.DS_Store
+Thumbs.db
